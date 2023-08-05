@@ -1,13 +1,13 @@
 node {
 
-    def MVN_HOME
+    def mvnHome
     stage('Preparation') { // for display purposes
         // Get some code from a GitHub repository
         git 'https://github.com/betawins/spring3-mvc-maven-xml-hello-world-1.git'
         // Get the Maven tool.
         // ** NOTE: This 'MVN_HOME' Maven tool must be configured
         // **       in the global configuration.
-        MVN_HOME = tool 'MVN_HOME'
+        mvnHome = tool 'MVN_HOME'
     }
     stage('Build') {
         // Run the maven build
