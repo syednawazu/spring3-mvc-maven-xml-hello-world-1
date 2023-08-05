@@ -9,7 +9,7 @@ node {
         // **       in the global configuration.
         mvnHome = tool 'MVN_HOME'
     }
-    stage('Build') {
+    stage('mvn build') {
         // Run the maven build
         withEnv(["MVN_HOME=$mvnHome"]) {
             if (isUnix()) {
