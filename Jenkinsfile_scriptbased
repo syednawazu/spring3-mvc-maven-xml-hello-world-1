@@ -7,7 +7,7 @@ node {
         // Get the Maven tool.
         // ** NOTE: This 'MVN_HOME' Maven tool must be configured
         // **       in the global configuration.
-        MVN_HOME = tool 'Maven'
+        MVN_HOME = tool 'MVN_HOME'
     }
     stage('Build') {
         // Run the maven build
